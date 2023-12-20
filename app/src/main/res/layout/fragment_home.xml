@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar dengan SearchView -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minWidth="20dp"
+        >
+
+        <!-- SearchView -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false"
+            app:queryHint="Cari..."
+            android:minWidth="20dp"
+            android:background="@android:color/transparent"
+            app:defaultQueryHint="Cari.."
+            android:alpha="0.5"/>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imgViem_1"
+        android:layout_width="wrap_content"
+        android:layout_height="333dp"
+        android:padding="16dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di OCTAStore"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"/>
+
+    <!-- Deskripsi -->
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jelajahi produk-produk unggulan kami dan temukan inspirasi belanja baru setiap hari."
+        android:textSize="16sp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#666"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tombol Materi Pembelajaran -->
+    <Button
+        android:id="@+id/buttonLearningMaterial"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Pesan Sekarang"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFF"
+        android:layout_below="@id/textViewDescription"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="130dp"
+        android:onClick="startLearningMaterialActivity"/>
+
+
+    <!-- Tombol Mulai Kuis -->
+
+    <!-- Footer -->
+    <Button
+        android:id="@+id/buttonStartQuiz"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/buttonLearningMaterial"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_button1"
+        android:text="+"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textViewFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2023 OCTAStore. Hak Cipta Dilindungi"
+        android:textSize="12sp"
+        android:textColor="#888"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"/>
+</RelativeLayout>
+

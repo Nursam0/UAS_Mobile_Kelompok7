@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">FirebaseFirestore</string>
+    <string name="app_name">OctaStore</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="deskripsi">Deskripsi Furniture</string>
+    <string-array name="data_name">
+        <item>Kursi</item>
+        <item>Meja</item>
+        <item>Sofa</item>
+    </string-array>
+    <string-array name="data_deskripsi">
+        <item>Kursi elegan dan nyaman untuk menemani waktu santai anda di rumah</item>
+        <item>Meja kayu berkualitas tinggi dengan desain modern. Cocok untuk ruang tamu dan kantor</item>
+        <item>Sofa yang empuk dan cocok untuk santai bareng keluarga</item>
+    </string-array>
+
+    <string-array name="data_foto">
+        <item>@drawable/kursi</item>
+        <item>@drawable/meja</item>
+        <item>@drawable/sofa</item>
+    </string-array>
 </resources>
